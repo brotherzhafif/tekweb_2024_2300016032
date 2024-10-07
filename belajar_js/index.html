@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <style>
+        button
+        {
+            padding: 5px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Percobaan 1</h1>
+    <h2>Ini Jam Sekarang</h2>
+    <p id="jam" onclick="document.getElementById('jam').innerText = Date()">
+        Ini adalah jam
+    </p>
+
+    <h1>Percobaan 2</h1>
+    <img style="width: 100px; height: auto;" id="kucing" alt="Kucing">
+    <button onclick="document.getElementById('kucing').src = 'tidur.png'">Tidur</button>
+    <button onclick="document.getElementById('kucing').src = 'joget.gif'">Joget</button>
+
+    <h1>Percobaan 3</h1>
+    <button onclick="alert('Anda Adalah Manusia')">Klik Untuk Menjadi Manusia</button>
+
+    <h1>Percobaan 4</h1>
+    <div>
+        <table border="solid">
+            <input type="text">
+            <tr>
+                <td>
+                    <button>1</button>
+                </td>
+                <td>
+                    <button>2</button>
+                </td>
+                <td>
+                    <button>3</button>
+                </td>
+                <td>
+                    <button>+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>4</button>
+                </td>
+                <td>
+                    <button>5</button>
+                </td>
+                <td>
+                    <button>6</button>
+                </td>
+                <td>
+                    <button>-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>7</button>
+                </td>
+                <td>
+                    <button>8</button>
+                </td>
+                <td>
+                    <button>9</button>
+                </td>
+                <td>
+                    <button>*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>.</button>
+                </td>
+                <td>
+                    <button>0</button>
+                </td>
+                <td>
+                    <button>=</button>
+                </td>
+                <td>
+                    <button>/</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('jam').innerHTML = Date()    
+</script>
