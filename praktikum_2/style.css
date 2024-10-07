@@ -1,14 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     background-color: #ececec; /* Light blue background */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 .card {
     background-color: #fff;
