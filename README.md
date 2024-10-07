@@ -8,4 +8,7 @@
 ### List of Asignment Web Link
 - [Praktikum 1](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_1/)
 - [Praktikum 2](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_2/)
+- [Belajar Javascript](https://brotherzhafif.site/tekweb_2024_2300016032/belajar_js/)
+- [Calculator Javascript](https://brotherzhafif.site/tekweb_2024_2300016032/belajar_js/calculator.html)
+
 
