@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Javasript</title>
+  </head>
+  <body id="badan">
+    <!-- Slider -->
+    <input type="range" min="1" max="100" value="50" name="warna" id="slider">
+    <p id="output1"></p>
+
+    <!-- Color Picker -->
+    <input type="color" name="gatau" id="picker" value="#ff0000">
+    <p id="output2"></p>
+  </body>
+</html>
+
+<script>
+  // Coba Slider
+  var slider = document.getElementById("slider")
+  var output1 = document.getElementById("output1")
+
+  output1.innerHTML = slider.value
+
+  slider.oninput = function(){
+    output1.innerHTML = this.value
+  }
+
+  // Coba Color Picker
+  var picker = document.getElementById("picker")
+  var output2 = document.getElementById("output2")
+
+  output2.innerHTML = picker.value
+
+  // STYLING TEST
+  var body = document.getElementById("badan")
+
+  picker.oninput = function(){
+    output2.innerHTML = this.value
+    body.style.backgroundColor = this.value
+  }
+  
+</script>
