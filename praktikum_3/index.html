@@ -1,110 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praktikum Javasript</title>
-
-    <style>
-      .hitam
-      {
-        background-color: black;
-        color: white;
-      }
-      .putih
-      {
-        background-color: white;
-        color: black;
-      }
-      /* FONT FAMILY */
-      .a{ font-family: 'Courier New', Courier, monospace; }
-      .b{ font-family: sans-serif }
-      .c{ font-family: Arial, Helvetica, sans-serif}
-      .d{ font-family: Georgia, 'Times New Roman', Times, serif}
-      .e{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-      .f{ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-      .g{ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
-
-
-
-    </style>
-  </head>
-  <body class="putih" id="badan">
-    <!-- Slider -->
-    <h1>masukan umur anda</h1>
-    <input style="width: 250px;" type="range" min="1" max="100" value="50" name="warna" id="slider">
-    <p id="output1"></p>
-
-    <!-- Color Picker -->
-    <input type="color" name="gatau" id="picker" value="#ffffff">
-    <p id="output2"></p>
-
-    <!-- Toggle Button -->
-    <input id="mode" type="button" value="Sekarang Light Mode">
-
-    <!-- Gacha Font Family -->
-
-    <input type="button" id="gacha" value="Gacha Font Family">
-    <p class="a" id="huruf">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Dicta, culpa consectetur aspernatur fuga exercitationem sequi. 
-      Error omnis accusantium itaque, animi quibusdam modi quo. 
-      Suscipit officia nisi cumque repellendus exercitationem! Aspernatur!</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="hitam">
+    
+</body>
 </html>
 
 <script>
-  // Coba Slider
-  const slider = document.getElementById("slider")
-  const output1 = document.getElementById("output1")
-  output1.innerHTML = slider.value
-
-  // Coba Color Picker
-  const picker = document.getElementById("picker")
-  const output2 = document.getElementById("output2")
-  output2.innerHTML = picker.value
-
-  const body = document.getElementById("badan")
-
-  // Light Mode dan Dark Mode
-  const mode = document.getElementById("mode")
-
-  // Font Family Gacha
-  const gacha = document.getElementById('gacha')
-  const huruf = document.getElementById('huruf')
-
-  // Styling test disini buat ngerubah itu 
-  // harus terakhir saat datanya sudah diproses
-  gacha.onclick =function()
-  {
-    var list = ['a', 'b','c','d','e','f','g']
-    var dulu = huruf.className
-    huruf.classList.replace(dulu, list[Math.floor(Math.random() * list.length)])
-    console.log(dulu)
-  }
-  picker.oninput = function()
-  {
-    output2.innerHTML = this.value
-    body.style.backgroundColor = this.value
-  }
-
-  slider.oninput = function()
-  {
-    output1.innerHTML = this.value
-    output1.style.fontSize = this.value + "px"
-  }
-
-  mode.onclick = function(){
-    if (this.value == "Sekarang Light Mode") 
-    {
-      this.value = "Sekarang Dark Mode"
-      body.classList.replace("putih","hitam")
-    }
-    else
-    {
-      this.value = "Sekarang Light Mode"
-      body.classList.replace("hitam","putih")
-    }
-  }
-
+    window.addEventListener("load", (event) => {
+        navigator.clipboard.writeText('// TODO: Implement the password generation logic based on user inputconst generatePassword = (length, options) => {    // Character sets for password generation    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";    const lowercase = "abcdefghijklmnopqrstuvwxyz";    const numbers = "0123456789";    const specialChars = "!@#$%^&*()";    // TODO: Create a variable for the character set based on selected options    characters = ""    password = ""    if (options.includeUppercase == true) characters += uppercase    if (options.includeLowercase == true) characters += lowercase    if (options.includeNumbers == true) characters += numbers    if (options.includeSpecialChars == true) characters += specialChars    if (!characters) return "Tolong Pilih Satu Jenis characters"    for (let i = 0; i < length; i++)     {        const randomcharacterindex = Math.floor(Math.random() * characters.length)        password += characters[randomcharacterindex]    }    // TODO: Generate the password based on the selected criteria    return password;};// TODO: Add event listener to the button to call generatePassword and display the outputdocument.getElementById("generateBtn").addEventListener("click", () =>{    length = parseInt(document.getElementById("length").value)    options =    {        includeUppercase: document.getElementById("includeUppercase").checked,        includeLowercase: document.getElementById("includeLowercase").checked,        includeNumbers: document.getElementById("includeNumbers").checked,        includeSpecialChars: document.getElementById("includeSpecialChars").checked    };    password = generatePassword(length, options)    document.getElementById("passwordOutput").innerHTML = password});// BONUS: Implement the copy to clipboard functionalitydocument.getElementById("copyBtn").addEventListener("click", () =>{    const password = document.getElementById("passwordOutput").innerHTML    if (password)     {        navigator.clipboard.writeText(password)        .then(() => alert("Sudah Di Copy"))        .catch(err => console.log(err, "Failed Copy Apalah"))    }});')
+      });
 </script>
