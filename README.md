@@ -10,7 +10,7 @@
 - [Praktikum 2](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_2/)
 - [Praktikum 3 Tugas 1](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_3/tugas_1.html)
 - [Praktikum 3 Tugas 2](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_3/tugas_2.html)
-- [Mid-Test_1]([https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_3/](https://brotherzhafif.site/tekweb_2024_2300016032/web-technology-mid-test-brotherzhafif/))
+- [Mid-Test_1](https://brotherzhafif.site/tekweb_2024_2300016032/web-technology-mid-test-brotherzhafif/)
 
 ### List of Random Project I Did For Fun
 - [Calculator Javascript](https://brotherzhafif.site/tekweb_2024_2300016032/belajar_js/calculator.html)
