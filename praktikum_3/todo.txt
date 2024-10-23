@@ -1,0 +1,11 @@
+Desain kira kira sesuai ref.jpg itu, 
+trus nanti ada icon gear buat setting
+1. Bisa ganti bg colo
+2. bisa slider font size
+3. Dark and Light Mode
+4. Change Font Style
+
+Backend
+Implement the addTask() function to handle adding tasks to the list.
+Implement the deleteTask(element) function to remove the corresponding task.
+Implement the editTask(element) function to allow task editing on double-click.
