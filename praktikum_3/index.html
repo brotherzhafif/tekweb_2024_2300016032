@@ -2,41 +2,115 @@
 <html>
 
 <head>
-    <title>To-Do App</title>
+    <title>Japip To-Do</title>
     <style>
-        body {
+        body 
+        {
+            background-color: lightgray;
             font-family: sans-serif;
         }
-        
-        .container {
-            background-color: lightgray;
+        .container 
+        {
+            justify-content: center;
+            background-color: white;
             width: 350px;
             margin: 0 auto;
             padding: 20px;
         }
-
-        input[type="text"] {
+        input[type="text"] 
+        {
+            padding: 8px 12px;
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
+            font-size: medium;
+            border: 1px solid white;
             box-sizing: border-box;
         }
+        input[type="checkbox"]
+        {
+            width: 50px
+        }
 
-  
+        .input_container
+        {
+            background-color: lightgray;
+            width: 100%;
+            display: flex;
+            gap: 5px;
+        }
+        .input_container > input[type="text"]
+        {
+            background-color: lightgray;
+            padding: 15px 20px;
+            border: none;
+        } 
+        .input_container > button
+        {
+            width: 25%;
+        }
+        .task_container
+        {
+            width: 100%;
+            padding: 0;
+        }
+        .task_container > li
+        {
+            background-color: white;
+            display: flex;
+            gap: 5px;
+        }
+        .task_btn
+        {
+            padding: 10px;
+            font-size: large;
+            text-align: center;
+            cursor: pointer;
+        }
+        .header_container
+        {
+            display: flex;
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+        }
+        h2, p
+        {
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-        <h2>My To-Do List</h2>
-        <input type="text" id="newTask" placeholder="Add a new task...">
-        <button onclick="addTask()">Add</button>
+        <div class="header_container">
+            <h2>To-Do List</h2>
+            <p>
+                ⚙️
+            </p>
+        </div>
+        
+        <!-- Input -->
+        <div class="input_container">
+            <input type="text" id="newTask" placeholder="Add a new task...">
+            <button onclick="addTask()">
+                ADD
+            </button>
+        </div>
 
-        <ul id="taskList">
-            
+        <!-- Task List -->
+        <ul class="task_container" id="taskList">
+            <li>
+                <input type="checkbox" id="task_done">
+                <input type="text">
+                
+                <!-- Task Control Button  -->
+                <div class="task_btn">✏️</div>
+                <div class="task_btn">❌</div>
+            </li>
         </ul>
+
     </div>
 
     <script>
