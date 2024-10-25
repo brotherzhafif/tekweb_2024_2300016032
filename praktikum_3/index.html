@@ -4,80 +4,83 @@
 <head>
     <title>Japip To-Do</title>
     <style>
-        body 
-        {
+        body {
             background-color: lightgray;
             font-family: sans-serif;
         }
-        .container 
-        {
+
+        .container {
             justify-content: center;
             background-color: white;
             width: 350px;
             margin: 0 auto;
             padding: 20px;
         }
-        input[type="text"] 
-        {
+
+        input[type="text"] {
             padding: 8px 12px;
             width: 100%;
             font-size: medium;
             border: 1px solid white;
             box-sizing: border-box;
         }
-        input[type="checkbox"]
-        {
+
+        input[type="checkbox"] {
             width: 50px
         }
 
-        .input_container
-        {
+        .input_container {
             background-color: lightgray;
             width: 100%;
             display: flex;
             gap: 5px;
         }
-        .input_container > input[type="text"]
-        {
+
+        .input_container>input[type="text"] {
             background-color: lightgray;
             padding: 15px 20px;
             border: none;
-        } 
-        .input_container > button
-        {
+        }
+
+        .input_container>button {
             width: 25%;
         }
-        .task_container
-        {
+
+        .task_container {
             width: 100%;
             padding: 0;
         }
-        .task_container > li
-        {
+
+        .task_container>li {
             background-color: white;
             display: flex;
             gap: 5px;
         }
-        .task_btn
-        {
+
+        .task_btn {
             padding: 10px;
             font-size: large;
             text-align: center;
             cursor: pointer;
         }
-        .header_container
-        {
+
+        .header_container {
             display: flex;
             width: 100%;
             font-size: 25px;
             text-align: center;
-            margin: 0;
+            margin: 0 0 35px 0;
             padding: 0;
             justify-content: space-between;
         }
-        h2, p
-        {
+
+        h2,
+        p {
             margin: 0;
+        }
+
+        li {
+            list-style-type: none;
         }
     </style>
 </head>
@@ -86,45 +89,128 @@
     <div class="container">
         <div class="header_container">
             <h2>To-Do List</h2>
-            <p>
-                ⚙️
-            </p>
-        </div>
-        
-        <!-- Input -->
-        <div class="input_container">
-            <input type="text" id="newTask" placeholder="Add a new task...">
-            <button onclick="addTask()">
-                ADD
-            </button>
+            <p>⚙️</p>
         </div>
 
-        <!-- Task List -->
-        <ul class="task_container" id="taskList">
-            <li>
-                <input type="checkbox" id="task_done">
-                <input type="text">
-                
-                <!-- Task Control Button  -->
-                <div class="task_btn">✏️</div>
-                <div class="task_btn">❌</div>
-            </li>
-        </ul>
+        <!-- Todo Editor -->
+        <div class="todo_container">
+            <!-- Input -->
+            <div class="input_container">
+                <input type="text" id="newTask" placeholder="Add a new task...">
+                <button onclick="addTask()">ADD</button>
+            </div>
 
+            <!-- Task List -->
+            <ul class="task_container" id="taskList"></ul>
+        </div>
     </div>
 
     <script>
-        function addTask() {
-           
+        const taskList = document.getElementById("taskList");
+        const newTaskInput = document.getElementById("newTask");
+
+        // Fungsi untuk mengambil data dari Local Storage
+        function getTasks() 
+        {
+            const tasks = localStorage.getItem("tasks");
+            return tasks ? JSON.parse(tasks) : [];
         }
 
-        function deleteTask(element) {
-           
+        // Fungsi untuk menyimpan data ke Local Storage
+        function saveTasks(tasks) 
+        {
+            localStorage.setItem("tasks", JSON.stringify(tasks));
         }
 
-        function editTask(element) {
-           
+        // Fungsi untuk menambah tugas baru
+        function addTask() 
+        {
+            const taskText = newTaskInput.value.trim();
+            if (taskText === "") 
+            {
+                alert("Task tidak boleh kosong");
+                return;
+            }
+
+            const tasks = getTasks();
+            tasks.push(
+                { 
+                    text: taskText, 
+                    completed: false 
+                });
+            saveTasks(tasks);
+            newTaskInput.value = "";
+            displayTasks();
         }
+
+        // Fungsi untuk menampilkan tugas di halaman
+        function displayTasks() 
+        {
+            const tasks = getTasks();
+            taskList.innerHTML = ""; // Kosongkan list sebelum diisi ulang
+
+            tasks.forEach((task, index) => 
+            {
+                const li = document.createElement("li");
+                li.className = "task_item";
+
+                // Menambahkan elemen HTML dengan innerHTML
+                li.innerHTML = `
+                    <input type="checkbox" ${task.completed ? "checked" : ""} onclick="toggleTaskCompletion(${index})">
+                    <input type="text" value="${task.text}" disabled ondblclick="editTask(this, ${index})">
+                    <div class="task_btn" onclick="enableEditTask(this, ${index})">✏️</div>
+                    <div class="task_btn" onclick="deleteTask(${index})">❌</div>
+                `;
+
+                // Coret teks jika tugas selesai
+                if (task.completed) 
+                {
+                    li.querySelector('input[type="text"]').style.textDecoration = "line-through";
+                }
+
+                taskList.appendChild(li);
+            });
+        }
+
+        // Fungsi untuk menghapus tugas
+        function deleteTask(index) 
+        {
+            const tasks = getTasks();
+            tasks.splice(index, 1);
+            saveTasks(tasks);
+            displayTasks();
+        }
+
+        // Fungsi untuk mengubah status selesai/tidak selesai
+        function toggleTaskCompletion(index) 
+        {
+            const tasks = getTasks();
+            tasks[index].completed = !tasks[index].completed;
+            saveTasks(tasks);
+            displayTasks();
+        }
+
+        // Fungsi untuk mengedit tugas
+        function enableEditTask(element, index) 
+        {
+            const taskText = element.previousElementSibling;
+            taskText.disabled = false;
+            taskText.focus();
+            taskText.onblur = () => editTask(taskText, index);
+        }
+
+        // Fungsi untuk menyimpan perubahan edit
+        function editTask(taskText, index) 
+        {
+            const tasks = getTasks();
+            tasks[index].text = taskText.value;
+            saveTasks(tasks);
+            taskText.disabled = true;
+            displayTasks();
+        }
+
+        // Inisialisasi untuk menampilkan tugas saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", displayTasks);
     </script>
 
 </body>
