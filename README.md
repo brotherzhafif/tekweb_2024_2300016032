@@ -6,9 +6,10 @@
 - Nim  : 2300016032
 
 ### List of Asignment Web Link
-- [Praktikum 1](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_1/)
-- [Praktikum 2](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_2/)
-- [Praktikum 3](https://brotherzhafif.site/tekweb_2024_2300016032/praktikum_3/)
+- [Praktikum 1](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_1/)
+- [Praktikum 2](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_2/)
+- [Praktikum 3](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_3/)
+- [Praktikum 4](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_4/)
 
 ### Mid Test
 - [Mid-Test_1](https://brotherzhafif.site/tekweb_2024_2300016032/web-technology-mid-test-brotherzhafif/)
