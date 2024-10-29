@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "daisyui": "^4.12.14",
     "tailwindcss": "^3.4.14"
   },
   "name": "tekweb_2024_2300016032",
