@@ -12,7 +12,9 @@ module.exports =
     colors: 
     {
       'main': '#2D76F9',
-      'secondary': '#EEF4FF',
+      'submain': '#EEF4FF',
+      'black': '#000000',
+      'white': '#FFFFFF',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
@@ -25,6 +27,8 @@ module.exports =
     },
     fontFamily: 
     {
+      poppins: ['Poppins', 'Poppins-Bold','sans-serif'],
+      nunito: ['Nunito'],
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
