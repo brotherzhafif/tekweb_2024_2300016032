@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = 
 {
-  plugins: [
-    require('daisyui'),
-  ],
   theme: {
     screens: 
     {
@@ -43,5 +40,12 @@ module.exports =
         '4xl': '2rem',
       }
     }
-  }
+  },
+  content: [
+    './praktikum_4/**/*.{html,js}',
+    './praktikum_4/index.html'
+  ],
+  plugins: [
+    require('daisyui')
+  ]
 }
