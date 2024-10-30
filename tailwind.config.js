@@ -4,7 +4,7 @@ module.exports =
   theme: {
     screens: 
     {
-      sm: '480px',
+      sm: '320px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
@@ -23,14 +23,14 @@ module.exports =
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
       'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+      'gray-light': '#d3dce6'
     },
     fontFamily: 
     {
       poppins: ['Poppins', 'Poppins-Bold','sans-serif'],
       nunito: ['Nunito'],
       sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      serif: ['Merriweather', 'serif']
     },
     extend: 
     {
@@ -38,10 +38,12 @@ module.exports =
       {
         '128': '32rem',
         '144': '36rem',
+        'desktop':'1366px',
+        'mobile': "800px"
       },
       borderRadius: 
       {
-        '4xl': '2rem',
+        '4xl': '2rem'
       }
     }
   },

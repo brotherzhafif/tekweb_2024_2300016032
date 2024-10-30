@@ -13,11 +13,11 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
 </head>
 
-<body class="leading-normal tracking-normal overflow-y-hidden bg-white">
-  <div class="flex flex-col h-screen bg-white">
+<body class="overflow-y-hidden bg-gray-dark flex flex-col items-center">
+  <div class="sm:w-screen lg:w-desktop flex flex-col h-screen  bg-white">
     <!-- Navigation Bar -->
-    <div class="navbar shadow-sm px-16 gap-x-4">
-      <div class="btn btn-ghost gap-4 mx-8 font-nunito">
+    <div class="navbar w-full shadow-sm px-16 gap-x-4">
+      <div class="btn btn-ghost gap-4 font-nunito">
         <img class="w-8" src="img/icon_logo.png" alt="logo">
         <b class="text-black">Remind<b class="text-primary">me</b></b>
       </div>
@@ -25,25 +25,34 @@
       <div class="btn btn-ghost bg-white text-black font-thin">Features</div>
       <div class="btn btn-ghost bg-white text-black font-thin">About Us</div>
       <div class="flex-1"></div>
-      <div class="btn mx-8 btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin w-36">About App</div>
+      <div class="btn btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin w-36">About App</div>
     </div>
 
-    <!-- First Section -->
-    <div class="flex flex-row h-full overflow-y-scroll">
-      <div class="w-1/2 p-20 text-black">
-        <p class="text-6xl mb-12">Manage Schedule and Task Easy</p>
-        <p class="text-gray mb-12">
-          Create and organize schedule and task deadline become better, 
-          easy manage and certainly no longer lagging behind schedule of activities and task
-        </p>
-        <div class="btn btn-active btn-primary rounded-badge bg-main text-white font-thin w-40">About App</div>
+    <!-- Content Container -->
+    <div class="flex w-full overflow-y-scroll">
+      <!-- First Section -->
+      <div class="sm:flex-col lg:flex-row flex h-max">
+        <div class="sm:w-full lg:w-1/2 p-20 text-black">
+          <p class="text-6xl mb-12">Manage Schedule and Task Easy</p>
+          <p class="text-gray mb-12">
+            Create and organize schedule and task deadline become better, 
+            easy manage and certainly no longer lagging behind schedule of activities and task
+          </p>
+          <div class="btn btn-active btn-primary rounded-badge bg-main text-white font-thin w-40">About App</div>
+        </div>
+        <div class="sm:w-full lg:w-1/2 bg-submain rounded-bl-badge flex items-center">
+          <img class="object-none" src="img/img_preview3.png">
+        </div>
       </div>
-      <div class="w-1/2 bg-submain rounded-bl-4xl flex items-center">
-        <img class="relative z-10 object-scale-down" src="img/img_preview3.png">
-      </div>
+
+      <!-- Second Section -->
+       <div class="flex flex-row">
+
+       </div>
     </div>
 
-  </div>
+</div>
+
 </body>
 
 <!-- AOS -->
