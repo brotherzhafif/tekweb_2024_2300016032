@@ -43,8 +43,8 @@ module.exports =
       },
       borderRadius: 
       {
-        '4xl': '2rem'
-      }
+        '4xl': '4rem'
+      },
     }
   },
   content: [
