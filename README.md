@@ -12,7 +12,7 @@
 - [Praktikum 4](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_4/)
 
 ### Mid Test
-- [Mid-Test_1](https://brotherzhafif.site/tekweb_2024_2300016032/web-technology-mid-test-brotherzhafif/)
+- [Mid-Test_1](https://brotherzhafif.github.io/tekweb_2024_2300016032/web-technology-mid-test-brotherzhafif/)
 
 ### List of Random Project I Did For Fun
 - [Calculator Javascript](https://brotherzhafif.site/tekweb_2024_2300016032/belajar_js/calculator.html)
