@@ -15,19 +15,47 @@
 
 <body class="overflow-y-hidden bg-gray-dark flex flex-col items-center">
   <div class="flex flex-col h-screen w-screen bg-white">
-    
-    <!-- Navigation Bar -->
-    <!-- <div class="navbar w-full shadow-sm px-16 gap-x-4">
-      <div class="btn btn-ghost gap-4 font-nunito">
-        <img class="w-8" src="img/icon_logo.png" alt="logo">
-        <b class="text-black">Remind<b class="text-primary">me</b></b>
+
+    <!-- Responsive Navbar -->
+    <div class="navbar bg-white p-4 shadow-sm z-10 md:px-16 sm:px-4">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl">
+          <img class="w-8" src="img/icon_logo.png" alt="logo">
+          <b class="text-black font-poppins md:text-base sm:text-sm">Remind<b class="text-primary">me</b></b>
+        </a>
+        <div class="md:flex flex-row sm:hidden">
+          <div class="btn btn-ghost bg-white font-bold text-primary"> Home</div>
+          <div class="btn btn-ghost bg-white text-black font-thin">Features</div>
+          <div class="btn btn-ghost bg-white text-black font-thin">About Us</div>  
+        </div>
       </div>
-      <div class="btn btn-ghost bg-white font-bold text-primary"> Home</div>
-      <div class="btn btn-ghost bg-white text-black font-thin">Features</div>
-      <div class="btn btn-ghost bg-white text-black font-thin">About Us</div>
-      <div class="flex-1"></div>
-      <div class="btn btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin w-36">About App</div>
-    </div> -->
+      <div class="navbar-end">
+        <div class="btn btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin p-3 w-36 md:flex sm:hidden">About App</div>
+        <div class="md:hidden sm:block dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- Content Container -->
     <div class="flex flex-col w-full overflow-y-scroll">
@@ -48,22 +76,22 @@
       </div>
 
       <!-- Second Section -->
-      <div class="flex flex-row px-14 p-5 my-20">
-        <div class="flex-grow p-2 mx-2">
+      <div class="flex sm:flex-col md:flex-row sm:px-8 md:px-14 p-5 my-10">
+        <div class="flex-grow p-2 mx-2 py-5">
           <div class="bg-submain rounded-full w-20 p-5 mb-12">
             <img src="img/icon_calender.png" alt="">
           </div>
           <p class="text-black font-bold text-xl mb-5">Set a better deadline tasks</p>
           <p class="text-gray">You can make your duty deadlines better and more orderly</p>
         </div>
-        <div class="flex-grow p-2 mx-2">
+        <div class="flex-grow p-2 mx-2 py-5">
           <div class="bg-submain rounded-full w-20 p-5 mb-12">
             <img src="img/icon_layer.png" alt="">
           </div>
           <p class="text-black font-bold text-xl mb-5">Manage the tasks so easily</p>
           <p class="text-gray">You can manage the deadlines and the schedule becomes easy</p>
         </div>
-        <div class="flex-grow p-2 mx-2">
+        <div class="flex-grow p-2 mx-2 py-5">
           <div class="bg-submain rounded-full w-20 p-6 mb-12">
             <img src="img/icon_notification.png" alt="">
           </div>
@@ -88,17 +116,21 @@
       </div>
 
       <!-- Fourth Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max w-full my-24">      
+      <div class="sm:flex-col-reverse lg:flex-row flex h-max w-full my-24">      
         <div class="md:p-14 py-28 w-5/6 text-black sm:p-10 sm:w-full">
           <p class="font-poppins font-bold text-2xl leading-snug mb-12">Get the highest priority application notification</p>
           <p class="text-gray">
             The best feature makes you better, with the latest technology to meet your needs. 
-            Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now !
+            Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now!
           </p>
         </div>
         <div class="w-full bg-submain md:rounded-l-4xl flex items-center sm:rounded-none">
           <img class="w-full" src="img/img_preview3.png" alt="3">
         </div>
+      </div>
+
+      <!-- Fiveth Section -->
+      <div class="sm:flex-col-reverse lg:flex-row flex h-max w-full my-24">
       </div>
     </div>
 
