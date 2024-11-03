@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<html class="overflow-y-hidden overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,11 +14,11 @@
   <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
 </head>
 
-<body class="overflow-y-hidden bg-gray-dark flex flex-col items-center">
-  <div class="flex flex-col h-screen w-screen bg-white">
+<body class="overflow-y-hidden overflow-x-hidden bg-gray-dark flex flex-col items-center">
+  <div class="overflow-y-hidden overflow-x-hidden flex flex-col h-screen w-screen bg-white">
 
     <!-- Responsive Navbar -->
-    <div class="navbar bg-white p-4 shadow-sm z-10 md:px-16 sm:px-4">
+    <div data-aos="fade-down" class="navbar bg-white p-4 shadow-sm z-10 md:px-16 sm:px-4">
       <div class="navbar-start">
         <a class="btn btn-ghost text-xl">
           <img class="w-8" src="img/icon_logo.png" alt="logo">
@@ -60,10 +59,12 @@
     </div>
 
     <!-- Content Container -->
-    <div class="flex flex-col w-full overflow-y-scroll gap-12">
+    <div data-aos="fade-up" 
+    style="overflow-y: scroll;overflow-x: hidden;" 
+    class="w-full flex flex-col gap-12">
     
       <!-- First Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max">
+      <div class=" sm:flex-col lg:flex-row flex h-max">
         <div class="sm:w-full md:w-5/6 md:p-20 sm:p-10 text-black">
           <p class="font-poppins font-bold leading-10 mb-12 md:text-5xl sm:text-2xl">Manage Schedule and Task Easy</p>
           <p class="text-gray mb-12">
@@ -174,7 +175,7 @@
       </div>
 
       <!-- Seventh Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max w-full md:px-20 sm:px-10 md:gap-4 sm:gap-10">
+      <div class="sm:flex-col lg:flex-row flex h-max w-full md:px-20 sm:px-10 md:gap-4 sm:gap-10 mb-12">
         <!-- Kiri -->
         <div class="md:w-2/3 sm:w-full flex flex-col gap-8 items-center">
           <div class="h-max w-full bg-white object-center flex flex-row gap-4 items-center">
