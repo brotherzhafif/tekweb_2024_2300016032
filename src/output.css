@@ -1827,8 +1827,8 @@ html {
   width: 83.333333%;
 }
 
-.w-52 {
-  width: 13rem;
+.w-64 {
+  width: 16rem;
 }
 
 .w-8 {
@@ -1841,14 +1841,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .list-disc {
@@ -1871,6 +1863,10 @@ html {
   gap: 3rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1885,10 +1881,6 @@ html {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .self-center {
@@ -2008,6 +2000,11 @@ html {
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2113,6 +2110,10 @@ html {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:flex-col {
@@ -2246,10 +2247,6 @@ html {
 
   .md\:items-start {
     align-items: flex-start;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-normal {
