@@ -1,230 +1,225 @@
 <html class="overflow-y-hidden overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RemindMe App</title>
+    <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../src/output.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FONTS -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+  </head>
 
-  <!-- FONTS -->
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-  <title>RemindMe App</title>
-  <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
-</head>
-
-<body class="overflow-y-hidden overflow-x-hidden bg-gray-dark flex flex-col items-center">
-  <div class="overflow-y-hidden overflow-x-hidden flex flex-col h-screen w-screen bg-white">
-
-    <!-- Responsive Navbar -->
-    <div data-aos="fade-down" class="navbar bg-white p-4 shadow-sm z-10 md:px-16 sm:px-4">
-      <div class="navbar-start">
-        <a class="btn btn-ghost text-xl">
-          <img class="w-8" src="img/icon_logo.png" alt="logo">
-          <b class="text-black font-poppins md:text-base sm:text-sm">Remind<b class="text-primary">me</b></b>
-        </a>
-        <div class="md:flex flex-row sm:hidden">
-          <div class="btn btn-ghost bg-white font-bold text-primary"> Home</div>
-          <div class="btn btn-ghost bg-white text-black font-thin">Features</div>
-          <div class="btn btn-ghost bg-white text-black font-thin">About Us</div>  
-        </div>
-      </div>
-      <div class="navbar-end">
-        <div class="btn btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin p-3 w-36 md:flex sm:hidden">About App</div>
-        <div class="md:hidden sm:block dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7" />
-            </svg>
+  <body class="overflow-y-hidden overflow-x-hidden bg-gray-dark flex flex-col items-center">
+    <div class="overflow-y-hidden overflow-x-hidden flex flex-col h-screen w-screen bg-white">
+      <!-- Responsive Navbar -->
+      <div data-aos="fade-down" class="navbar bg-white p-4 shadow-sm z-10 md:px-16 sm:px-4">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl">
+            <img class="w-8" src="img/icon_logo.png" alt="logo">
+            <b class="text-black font-poppins md:text-base sm:text-sm">Remind<b class="text-primary">me</b></b>
+          </a>
+          <div class="md:flex flex-row sm:hidden">
+            <div class="btn btn-ghost bg-white font-bold text-primary"> Home</div>
+            <div class="btn btn-ghost bg-white text-black font-thin">Features</div>
+            <div class="btn btn-ghost bg-white text-black font-thin">About Us</div>  
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-64 gap-2 p-2 shadow absolute right-0">
-            <li><a>Homepage</a></li>
-            <li><a>Features</a></li>
-            <li><a>About Us</a></li>
-          </ul>
         </div>
-      </div>
-    </div>
-
-    <!-- Content Container -->
-    <div data-aos="fade-up" 
-    style="overflow-y: scroll;overflow-x: hidden;" 
-    class="w-full flex flex-col gap-12">
-    
-      <!-- First Section -->
-      <div class=" sm:flex-col lg:flex-row flex h-max">
-        <div class="sm:w-full md:w-5/6 md:p-20 sm:p-10 text-black">
-          <p class="font-poppins font-bold leading-10 mb-12 md:text-5xl sm:text-2xl">Manage Schedule and Task Easy</p>
-          <p class="text-gray mb-12">
-            Create and organize schedule and task deadline become better, 
-            easy manage and certainly no longer lagging behind schedule of activities and task
-          </p>
-          <div class="btn btn-active btn-primary rounded-badge bg-main text-white font-thin w-40">Download App</div>
-        </div>
-        <div class="w-full bg-submain md:rounded-bl-4xl flex items-center sm:rounded-none">
-          <img class="w-full" src="img/img_preview1.png" alt="">
-        </div>
-      </div>
-
-      <!-- Second Section -->
-      <div class="items-center flex sm:flex-col md:flex-row sm:px-8 md:px-14 p-5">
-        <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
-          <div class="bg-submain rounded-full w-20 p-5 mb-12">
-            <img src="img/icon_calender.png" alt="">
-          </div>
-          <p class="text-black font-bold text-xl mb-5">Set a better deadline tasks</p>
-          <p class="text-gray">You can make your duty deadlines better and more orderly</p>
-        </div>
-        <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
-          <div class="bg-submain rounded-full w-20 p-5 mb-12">
-            <img src="img/icon_layer.png" alt="">
-          </div>
-          <p class="text-black font-bold text-xl mb-5">Manage the tasks so easily</p>
-          <p class="text-gray">You can manage the deadlines and the schedule becomes easy</p>
-        </div>
-        <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
-          <div class="bg-submain rounded-full w-20 p-6 mb-12">
-            <img src="img/icon_notification.png" alt="">
-          </div>
-          <p class="text-black font-bold text-xl mb-5">Wouldn’t miss notifications</p>
-          <p class="text-gray">Of course you will always get the tasks and schedule notifications</p>
-        </div>
-        
-      </div>
-      
-      <!-- Third Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max w-full">
-        <div class="w-full bg-submain md:rounded-r-4xl flex items-center sm:rounded-none">
-          <img class="w-full" src="img/img_preview2.png" alt="">
-        </div>
-        <div class="md:w-5/6 sm:w-full text-black md:p-20 sm:p-10">
-          <p class="font-poppins font-bold text-2xl leading-snug mb-12">Set up task and schedule with a best features</p>
-          <p class="text-gray">
-            The best feature makes you better, with the latest technology to meet your needs. 
-            Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now!
-          </p>
-        </div>
-      </div>
-
-      <!-- Fourth Section -->
-      <div class="sm:flex-col-reverse lg:flex-row flex h-max w-full">      
-        <div class="md:p-14 py-28 w-5/6 text-black sm:p-10 sm:w-full">  
-          <p class="font-poppins font-bold text-2xl leading-snug mb-12">Get the highest priority application notification</p>
-          <p class="text-gray">
-            The best feature makes you better, with the latest technology to meet your needs. 
-            Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now!
-          </p>
-        </div>
-        <div class="w-full bg-submain md:rounded-l-4xl flex items-center sm:rounded-none">
-          <img class="w-full" src="img/img_preview3.png" alt="3">
-        </div>
-      </div>
-
-      <!-- Fiveth Section -->
-      <div class="
-      bg-cover bg-center bg-[url('.././praktikum_4/img/img_hiasan.png')] 
-      bg-main md:rounded-4xl  sm:rounded-2xl sm:flex-col flex h-max w-11/12 
-      self-center md:p-20 md:px-32 sm:p-8">
-        <p class="text-white font-poppins md:text-4xl sm:text-2xl leading-loose md:mb-20 sm:mb-8 text-center mx-2">Download an app now and the various benefits you will get immediately</p>
-        <div class="self-center flex md:flex-row sm:flex-col">
-          <div class="self-center mx-12 mb-4 btn btn-ghost btn-primary rounded-badge bg-white text-primary font-thin w-40">Download App</div>
-          <div class="self-center mx-12 mb-4 btn btn-outline rounded-badge bg-main text-white font-thin w-40">About App</div>
-        </div>
-      </div>
-
-      <!-- Sixth Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max w-full">
-        <div class="w-full pr-12 bg-submain md:rounded-r-4xl flex items-center sm:rounded-none">
-          <img class="w-full" src="img/img_testimoni.png" alt="">
-        </div>
-        <div class="flex flex-col gap-6 md:w-5/6 sm:w-full text-black md:p-20 sm:p-10">
-          <p class="font-poppins font-bold text-2xl leading-snug">What do they think</p>
-          <div class="flex flex-row gap-4">
-            <img class="w-1/6" src="img/img_profil_testi.png" alt="">
-            <div class="flex h-full flex-col">
-              <p class="font-semibold">Samantha Sench</p>
-              <div class="h-full"></div>  
-              <p class="text-sm text-gray">Student at University</p>
+        <div class="navbar-end">
+          <div class="btn btn-ghost btn-outline btn-primary rounded-badge bg-white font-thin p-3 w-36 md:flex sm:hidden">About App</div>
+          <div class="md:hidden sm:block dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
             </div>
-          </div>
-          <p class="text-gray">
-            “ Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of
-            tasks and schedule after that the app is very simple using. “
-          </p>
-          <div class="flex flex-row w-full md:justify-normal sm:justify-center">
-            <button class="md:w-14 sm:w-16 btn btn-ghost bg-white">
-              <img class="w-full" src="img/icon_panah_kiri.png" alt="">
-            </button>
-            <button class="md:w-14 sm:w-16 btn btn-ghost bg-white">
-              <img class="w-full" src="img/icon_panah_kanan.png" alt="">
-            </button>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-64 gap-2 p-2 shadow absolute right-0">
+              <li><a>Homepage</a></li>
+              <li><a>Features</a></li>
+              <li><a>About Us</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Seventh Section -->
-      <div class="sm:flex-col lg:flex-row flex h-max w-full md:px-20 sm:px-10 md:gap-4 sm:gap-10 mb-12">
-        <!-- Kiri -->
-        <div class="md:w-2/3 sm:w-full flex flex-col gap-8 items-center">
-          <div class="h-max w-full bg-white object-center flex flex-row gap-4 items-center">
-            <img class="md:w-24 sm:w-14" src="img/icon_logo.png" alt="">
-            <b class="text-black font-poppins sm:text-lg md:text-2xl">Remind<b class="text-primary">me</b></b>
+      <!-- Content Container -->
+      <div data-aos="fade-up" 
+      style="overflow-y: scroll;overflow-x: hidden;" 
+      class="w-full flex flex-col gap-12">
+      
+        <!-- First Section -->
+        <div class=" sm:flex-col lg:flex-row flex h-max">
+          <div class="sm:w-full md:w-5/6 md:p-20 sm:p-10 text-black">
+            <p class="font-poppins font-bold leading-10 mb-12 md:text-5xl sm:text-2xl">Manage Schedule and Task Easy</p>
+            <p class="text-gray mb-12">
+              Create and organize schedule and task deadline become better, 
+              easy manage and certainly no longer lagging behind schedule of activities and task
+            </p>
+            <div class="btn btn-active btn-primary rounded-badge bg-main text-white font-thin w-40">Download App</div>
           </div>
-          <p class="w-full">
-            Task deadlines and scheduling applications with various benefits and advantages
-          </p>
+          <div class="w-full bg-submain md:rounded-bl-4xl flex items-center sm:rounded-none">
+            <img class="w-full" src="img/img_preview1.png" alt="">
+          </div>
         </div>
 
-        <!-- Tengah -->
-        <div class="w-full flex flex-row">
-          <div class="sm:w-2/3 lg:p-10 sm:p-0 flex flex-col gap-4 lg:items-center sm:items-start">
-            <p class="font-poppins font-bold text-black sm:text-lg md:text-xl mb-4">Sitemaps</p>
-            <ul class="list-disc gap-3 font-normal flex flex-col md:mx-4 sm:m-0 md:text-base sm:text-sm">
-              <li class="text-left">Home</li>
-              <li class="text-left">Features</li>
-              <li class="text-left">About Us</li>
-            </ul>
+        <!-- Second Section -->
+        <div class="items-center flex sm:flex-col md:flex-row sm:px-8 md:px-14 p-5">
+          <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
+            <div class="bg-submain rounded-full w-20 p-5 mb-12">
+              <img src="img/icon_calender.png" alt="">
+            </div>
+            <p class="text-black font-bold text-xl mb-5">Set a better deadline tasks</p>
+            <p class="text-gray">You can make your duty deadlines better and more orderly</p>
+          </div>
+          <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
+            <div class="bg-submain rounded-full w-20 p-5 mb-12">
+              <img src="img/icon_layer.png" alt="">
+            </div>
+            <p class="text-black font-bold text-xl mb-5">Manage the tasks so easily</p>
+            <p class="text-gray">You can manage the deadlines and the schedule becomes easy</p>
+          </div>
+          <div class="flex flex-col md:items-start sm:items-center p-2 mx-2 py-5 md:text-start sm:text-center">
+            <div class="bg-submain rounded-full w-20 p-6 mb-12">
+              <img src="img/icon_notification.png" alt="">
+            </div>
+            <p class="text-black font-bold text-xl mb-5">Wouldn’t miss notifications</p>
+            <p class="text-gray">Of course you will always get the tasks and schedule notifications</p>
           </div>
           
-          <div class="md:w-0 sm:w-1/2"></div>
-
-          <div class="md:w-2/3 lg:p-10 sm:p-0 px-4 flex flex-col gap-4 lg:items-center sm:items-start">
-            <p class="font-poppins font-bold text-black sm:text-lg md:text-xl mb-4">Advantages</p>
-            <ul class="list-disc gap-3 font-normal flex flex-col md:text-base sm:text-sm">
-              <li class="text-left">Set Task Better</li>
-              <li class="text-left">Easy Manage</li>
-              <li class="text-left">Get Notifications</li>
-            </ul>
+        </div>
+        
+        <!-- Third Section -->
+        <div class="sm:flex-col lg:flex-row flex h-max w-full">
+          <div class="w-full bg-submain md:rounded-r-4xl flex items-center sm:rounded-none">
+            <img class="w-full" src="img/img_preview2.png" alt="">
+          </div>
+          <div class="md:w-5/6 sm:w-full text-black md:p-20 sm:p-10">
+            <p class="font-poppins font-bold text-2xl leading-snug mb-12">Set up task and schedule with a best features</p>
+            <p class="text-gray">
+              The best feature makes you better, with the latest technology to meet your needs. 
+              Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now!
+            </p>
           </div>
         </div>
 
-        <!-- Kanan -->
-        <div class="md:w-2/5 sm:w-full lg:p-10 sm:p-0 px-4 flex flex-col gap-12 sm:items-start lg:items-center">
-          <p class="font-poppins font-bold text-black text-xl mb-4">Follow Us</p>
-          <img class="md:w-48 sm:w-36" src="img/icon_sosmed.png" alt="">
+        <!-- Fourth Section -->
+        <div class="sm:flex-col-reverse lg:flex-row flex h-max w-full">      
+          <div class="md:p-14 py-28 w-5/6 text-black sm:p-10 sm:w-full">  
+            <p class="font-poppins font-bold text-2xl leading-snug mb-12">Get the highest priority application notification</p>
+            <p class="text-gray">
+              The best feature makes you better, with the latest technology to meet your needs. 
+              Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now!
+            </p>
+          </div>
+          <div class="w-full bg-submain md:rounded-l-4xl flex items-center sm:rounded-none">
+            <img class="w-full" src="img/img_preview3.png" alt="3">
+          </div>
         </div>
+
+        <!-- Fiveth Section -->
+        <div class="
+        bg-cover bg-center bg-[url('.././praktikum_4/img/img_hiasan.png')] 
+        bg-main md:rounded-4xl  sm:rounded-2xl sm:flex-col flex h-max w-11/12 
+        self-center md:p-20 md:px-32 sm:p-8">
+          <p class="text-white font-poppins md:text-4xl sm:text-2xl leading-loose md:mb-20 sm:mb-8 text-center mx-2">Download an app now and the various benefits you will get immediately</p>
+          <div class="self-center flex md:flex-row sm:flex-col">
+            <div class="self-center mx-12 mb-4 btn btn-ghost btn-primary rounded-badge bg-white text-primary font-thin w-40">Download App</div>
+            <div class="self-center mx-12 mb-4 btn btn-outline rounded-badge bg-main text-white font-thin w-40">About App</div>
+          </div>
+        </div>
+
+        <!-- Sixth Section -->
+        <div class="sm:flex-col lg:flex-row flex h-max w-full">
+          <div class="w-full pr-12 bg-submain md:rounded-r-4xl flex items-center sm:rounded-none">
+            <img class="w-full" src="img/img_testimoni.png" alt="">
+          </div>
+          <div class="flex flex-col gap-6 md:w-5/6 sm:w-full text-black md:p-20 sm:p-10">
+            <p class="font-poppins font-bold text-2xl leading-snug">What do they think</p>
+            <div class="flex flex-row gap-4">
+              <img class="w-1/6" src="img/img_profil_testi.png" alt="">
+              <div class="flex h-full flex-col">
+                <p class="font-semibold">Samantha Sench</p>
+                <div class="h-full"></div>  
+                <p class="text-sm text-gray">Student at University</p>
+              </div>
+            </div>
+            <p class="text-gray">
+              “ Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of
+              tasks and schedule after that the app is very simple using. “
+            </p>
+            <div class="flex flex-row w-full md:justify-normal sm:justify-center">
+              <button class="md:w-14 sm:w-16 btn btn-ghost bg-white">
+                <img class="w-full" src="img/icon_panah_kiri.png" alt="">
+              </button>
+              <button class="md:w-14 sm:w-16 btn btn-ghost bg-white">
+                <img class="w-full" src="img/icon_panah_kanan.png" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seventh Section -->
+        <div class="sm:flex-col lg:flex-row flex h-max w-full md:px-20 sm:px-10 md:gap-4 sm:gap-10 mb-12">
+          <!-- Kiri -->
+          <div class="md:w-2/3 sm:w-full flex flex-col gap-8 items-center">
+            <div class="h-max w-full bg-white object-center flex flex-row gap-4 items-center">
+              <img class="md:w-24 sm:w-14" src="img/icon_logo.png" alt="">
+              <b class="text-black font-poppins sm:text-lg md:text-2xl">Remind<b class="text-primary">me</b></b>
+            </div>
+            <p class="w-full">
+              Task deadlines and scheduling applications with various benefits and advantages
+            </p>
+          </div>
+
+          <!-- Tengah -->
+          <div class="w-full flex flex-row">
+            <div class="sm:w-2/3 lg:p-10 sm:p-0 flex flex-col gap-4 lg:items-center sm:items-start">
+              <p class="font-poppins font-bold text-black sm:text-lg md:text-xl mb-4">Sitemaps</p>
+              <ul class="list-disc gap-3 font-normal flex flex-col md:mx-4 sm:m-0 md:text-base sm:text-sm">
+                <li class="text-left">Home</li>
+                <li class="text-left">Features</li>
+                <li class="text-left">About Us</li>
+              </ul>
+            </div>
+            
+            <div class="md:w-0 sm:w-1/2"></div>
+
+            <div class="md:w-2/3 lg:p-10 sm:p-0 px-4 flex flex-col gap-4 lg:items-center sm:items-start">
+              <p class="font-poppins font-bold text-black sm:text-lg md:text-xl mb-4">Advantages</p>
+              <ul class="list-disc gap-3 font-normal flex flex-col md:text-base sm:text-sm">
+                <li class="text-left">Set Task Better</li>
+                <li class="text-left">Easy Manage</li>
+                <li class="text-left">Get Notifications</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kanan -->
+          <div class="md:w-2/5 sm:w-full lg:p-10 sm:p-0 px-4 flex flex-col gap-12 sm:items-start lg:items-center">
+            <p class="font-poppins font-bold text-black text-xl mb-4">Follow Us</p>
+            <img class="md:w-48 sm:w-36" src="img/icon_sosmed.png" alt="">
+          </div>
       </div>
+    </div>
+  </body>
 
-</div>
-
-</body>
-
-<!-- AOS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
