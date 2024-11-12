@@ -17,7 +17,4 @@
 ### MidTerm Exam
 - [MidTerm Exam](https://brotherzhafif.github.io/tekweb_2024_2300016032/uts-tekweb-2024-ujicoba-brotherzhafif/) 
 
-### List of Random Project I Did For Fun
-- [Calculator Javascript](https://brotherzhafif.github.io/tekweb_2024_2300016032/belajar_js/calculator.html)
-
 
