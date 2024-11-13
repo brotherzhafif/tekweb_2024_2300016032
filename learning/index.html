@@ -10,45 +10,47 @@
     <div class="self-center container w-64 p-3 shadow-lg flex flex-col items-center bg-gray-dark gap-3 flex-wrap">
         <!-- TEXT CONTAINER -->
         <div class="w-full">
-            <input type="text" placeholder="Type here" class="input bg-white text-black w-full max-w-xs" />
+            <input id="output" type="text" placeholder="Type here" class="input bg-white text-black w-full max-w-xs" />
         </div>
 
         <!-- INPUT BUTTON -->
         <div class="w-full flex flex-row flex-wrap">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="AC">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="√">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="^">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="/">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="AC">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="√">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="^">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="/">
         </div>
 
         <div class="w-full flex flex-row ">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="7">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="8">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="9">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="x">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="7">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="8">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="9">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="x">
         </div>
 
         <div class="w-full flex flex-row ">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="4">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="5">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="6">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="-">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="4">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="5">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="6">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="-">
         </div>
 
         <div class="w-full flex flex-row ">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="1">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="2">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="3">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="+">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="1">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="2">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="3">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="+">
         </div>
 
         <div class="w-full flex flex-row ">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="⬅">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="0">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value=".">
-            <input class="btn rounded-none w-1/4 btn-primary" type="button" value="=">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="⬅">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="0">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value=".">
+            <input class="btn rounded-none w-1/4 btn-primary" type="button" onclick="getValue(this)"  value="=">
         </div>
 
     </div>
 </body>
 </html>
+
+<script src="script.js"></script>
