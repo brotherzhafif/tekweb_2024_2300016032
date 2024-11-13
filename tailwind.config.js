@@ -1,6 +1,43 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = 
 {
+  mode: 'jit',
+  daisyui: {
+    themes: [
+      "light",
+      "dark",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "synthwave",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "garden",
+      "forest",
+      "aqua",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "black",
+      "luxury",
+      "dracula",
+      "cmyk",
+      "autumn",
+      "business",
+      "acid",
+      "lemonade",
+      "night",
+      "coffee",
+      "winter",
+      "dim",
+      "nord",
+      "sunset",
+    ]
+  },
   theme: {
     screens: 
     {
@@ -49,7 +86,8 @@ module.exports =
   },
   content: [
     './praktikum_4/**/*.{html,js}',
-    './praktikum_4/index.html'
+    './praktikum_4/index.html',
+    './learning/index.html'
   ],
   plugins: [
     require('daisyui')
