@@ -1,0 +1,45 @@
+/* Tambahkan styling untuk dropdown dan sembunyikan konten dropdown secara default */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: lightgray;
+}
+#dropdownButton
+{
+    padding: 10px;
+    background-color: lightblue;
+    border: solid white 2px;
+}
+#dropdownButton:hover
+{
+    background-color: cyan;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    background-color: lightblue;
+    width: 150px;
+    padding: 5px;
+}
+a:hover
+{
+    background-color: cyan;
+
+}
+.dropdown-content
+{
+    box-shadow: 0 0 5px gray;
+    position: absolute;
+    left: 15px;
+    gap: 2px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: max-content;
+    padding: 2px;
+}

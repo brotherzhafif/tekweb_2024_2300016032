@@ -1,0 +1,31 @@
+/* Tambahkan styling untuk membuat gambar lingkaran dengan border dan bayangan. */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.profile-pic
+{
+    border-radius: 9999999px;
+    width: 50vh;
+    height: 50vh;
+    box-shadow: 0 0 15px black;
+    border: solid black;
+
+}
+.profile-pic > img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 9999999px;
+}

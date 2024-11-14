@@ -1,0 +1,20 @@
+/* Tambahkan styling untuk warna latar dalam mode terang dan gelap. */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button
+{
+    background-color: cyan;
+    color: black;
+    padding: 15px;
+}

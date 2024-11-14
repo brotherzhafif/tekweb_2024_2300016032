@@ -1,0 +1,48 @@
+/* Tambahkan styling untuk form */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form    
+{
+    width: 320px;
+    gap: 5px    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: white;    
+}
+h2
+{
+    margin-bottom: 15px;
+}
+.inp
+{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+button
+{
+    border: none;
+    padding: 15px;
+    width: 100%;
+    background-color: lightblue;
+}
+button:hover
+{
+    background-color: aquamarine;
+}
