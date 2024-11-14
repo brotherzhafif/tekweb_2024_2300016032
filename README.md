@@ -18,6 +18,7 @@
 - [Testing](https://brotherzhafif.github.io/tekweb_2024_2300016032/uts-tekweb-2024-ujicoba-brotherzhafif/) 
 - [MidTerm Exam](https://brotherzhafif.github.io/tekweb_2024_2300016032/Exam_MidTerm/) 
 
-### Learning Project Challenge (Only Documentation Challenge)
+### Learning Project Challenge (Challenge)
+> No Youtube, No Ai, Only Documentation and Web Challenge
 - [Calculator](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/calculator)
 
