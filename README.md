@@ -5,9 +5,6 @@
 - Nama : Raja Zhafif Raditya Harahap
 - Nim  : 2300016032
 
-### Learning Project Challenge (Only Documentation Challenge)
-- [Calculator](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/calculator)
-
 ### List of Asignment Web Link
 - [Praktikum 1](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_1/)
 - [Praktikum 2](https://brotherzhafif.github.io/tekweb_2024_2300016032/praktikum_2/)
@@ -21,4 +18,7 @@
 - [Testing](https://brotherzhafif.github.io/tekweb_2024_2300016032/uts-tekweb-2024-ujicoba-brotherzhafif/) 
 - [MidTerm Exam](https://brotherzhafif.github.io/tekweb_2024_2300016032/Exam_MidTerm/) 
 
+### Learning Project Challenge (Challenge)
+> No Youtube, No Ai, Only Documentation and Web Challenge
+- [Calculator](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/calculator)
 
