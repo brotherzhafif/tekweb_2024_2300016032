@@ -87,7 +87,7 @@ module.exports =
   content: [
     './praktikum_4/**/*.{html,js}',
     './praktikum_4/index.html',
-    './learning/index.html'
+    './learning/**/*.{html,js}'
   ],
   plugins: [
     require('daisyui')
