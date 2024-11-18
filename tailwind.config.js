@@ -85,9 +85,9 @@ module.exports =
     }
   },
   content: [
+    "./praktikum_5/src/**/*.{js,jsx,ts,tsx}",
     './praktikum_4/**/*.{html,js}',
-    './praktikum_4/index.html',
-    './learning/**/*.{html,js}'
+    './learning/**/*.{html,js}',
   ],
   plugins: [
     require('daisyui')
