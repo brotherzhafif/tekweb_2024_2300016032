@@ -22,7 +22,7 @@ header
 }
 main
 {
-    flex-grow: 10;
+    flex-grow: 1;
     padding: 15px;
     background-color: lightgray;
 }
