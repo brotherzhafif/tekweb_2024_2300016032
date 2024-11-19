@@ -4,3 +4,6 @@
 [submodule "uts-tekweb-2024-ujicoba-brotherzhafif"]
 	path = uts-tekweb-2024-ujicoba-brotherzhafif
 	url = https://github.com/Ruang-Ekspresi-UAD/uts-tekweb-2024-ujicoba-brotherzhafif.git
+[submodule "learning/Todolist-React"]
+	path = learning/Todolist-React
+	url = https://github.com/brotherzhafif/Todolist-React.git
