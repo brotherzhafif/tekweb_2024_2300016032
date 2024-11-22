@@ -18,4 +18,4 @@
 ### Learning Project Challenge (Challenge)
 > No Youtube, No Ai, Only Documentation and Web Challenge
 - [Calculator](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/calculator)
-- [Calculator](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/Todolist-React)
+- [Todolist-React](https://brotherzhafif.github.io/tekweb_2024_2300016032/learning/Todolist-React)
